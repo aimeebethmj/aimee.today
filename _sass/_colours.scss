@@ -1,0 +1,148 @@
+// VARIABLES
+
+$black: #000000;
+$teal: #005A80;
+$blue1: #00B4FF;
+$blue2: #5FD1F9;
+$blue3: #95E0FB;
+$paleBlue: #F4FCFF;
+$white: #FFFFFF;
+
+a
+{
+	color: $black;
+	text-decoration: underline;
+	&:hover, &:active
+	{
+	  color: $teal;
+	}
+}
+
+.nav-bar
+{
+	background-color: rgba($white, 0.8);
+
+	a,
+	.hamburger
+	{
+		color: $black;
+
+		&:hover, &:active
+		{
+		  color: $blue1;
+		}
+	}
+}
+
+ul.gallery
+{
+	a
+	{
+		background-color: rgba($blue1, .7);
+		color: white;
+	}
+}
+
+.fieldnotes ul li a
+{
+	color: inherit;
+
+	&:hover, &:active
+  {
+    color: $blue1;
+
+    &:hover, &:active
+    {
+      color: $blue2;
+    }
+  }
+}
+
+.blog
+{
+	background: $paleBlue;
+}
+
+.multiple-slider
+{
+    .column
+    {
+    	background: transparent;
+    	&:hover
+	    {
+	        background: $blue3;
+	    }
+	    &:focus
+	    {
+	    	outline: none;
+	    }
+	}
+}
+
+#me
+{
+
+	a,
+	.footerEmail
+	{
+		color: $blue1;
+		text-decoration: none;
+
+		&:hover, &:active
+	    {
+	      color: $blue2;
+	    }
+	}
+
+	a span.wantMore
+	{
+		color: $black;
+	}
+
+}
+
+#footer-bar
+{
+	background-color: $blue1;
+}
+
+.slider
+{
+	h1
+	{
+		color: $white;
+	}
+
+	.slick-slide:focus
+	{
+		outline: none;
+	}
+
+	.slick-dots
+	{
+	    li
+	    {
+	        button
+	        {
+	            &:hover, &:focus
+	            {
+	                &:before
+	                {
+	                    opacity: 1;
+	                }
+	            }
+	            &:before
+	            {
+	                color: $white;
+	                opacity: 1;
+	                -webkit-font-smoothing: antialiased;
+	                -moz-osx-font-smoothing: grayscale;
+	            }
+	        }
+	        &.slick-active button:before {
+	            color: $blue1;
+	            opacity: 1;
+	        }
+	    }
+	}
+}

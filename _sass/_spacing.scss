@@ -1,0 +1,108 @@
+.container
+{
+  padding: 0;
+  max-width: 120rem; // should be 1200px
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.vertical-centered {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+.low-centered
+{
+  position: absolute;
+  top: 70%;
+  /* left: 50%;
+  -webkit-transform: translate(-75%,-50%);
+  -moz-transform: translate(-75%,-50%);
+  -ms-transform: translate(-75%,-50%);
+  -o-transform: translate(-75%,-50%);
+  transform: translate(-75%,-50%); */
+  width: 100%;
+  text-align: center;
+}
+
+.main-heading
+{
+  text-align: center;
+  padding: 18rem 0 2rem;
+}
+
+.sub-heading
+{
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.sub-sub-heading
+{
+  text-align: center;
+}
+
+// ---------
+
+.container.slider
+{
+  position: relative;
+}
+
+.boxed-content
+{
+  // margin-left: 10%;
+  // margin-right: 10%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.text-content
+{
+  margin-left: 25%;
+  margin-right: 25%;
+
+  .fieldnotes
+  {
+    margin-bottom: 5rem;
+  }
+}
+
+// .contact-links
+// {
+//   text-align: center;
+//   margin-top: 3rem;
+
+//   p
+//   {
+//     padding-right: 2rem;
+//     padding-left: 2rem;
+//   }
+
+//   a .fa-twitter
+//   {
+//     padding-left: 2rem;
+//   }
+// }
+
+.footerEmail
+{
+  a
+  {
+    padding-left: 2rem;
+  }
+
+}

@@ -17,23 +17,42 @@
 
 		<?php while (have_posts()) : the_post(); ?>
 
+	    <div class="container" id="welcomeSection">
+	      <div class="row" id="todayMessage">
+	        <!-- <div class="twelve columns h-centred v-centred"> -->
+	        <div class="twelve columns h-centred v-centred">
+	          <img alt="Today's inspiration: Do that thing!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayLogoHandwriting.svg">
+	        </div>
+	      </div>
+	      <div class="row" id="welcomeImage">  
+	        <!-- <div class="twelve columns headerImage h-centred v-centred">    -->
+	        <div class="twelve columns">
+	          <img alt="Drawing of Aimee's studio and photo of Aimee smiling, super happy that you're here!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayheaderImage_heart.png">
+	          <!-- <section class="h-centred v-centred headerAboutBlurb"> -->
+	          <p>Pep-talks &amp; printables <br>to get beyond your limits</p>
+	          <!-- </section> -->
+	        </div> 
+	      </div>
+	    </div>
+			
+		<div class="container" id="mainBlogFeed">
+			<div class="row">
+				<!-- <div class="twelve columns h-centred v-centred"> -->
+				<div class="twelve columns">
+					
+					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
-		
+						<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+						<div class="entry">
+							<?php the_content(); ?>
+						</div>
 
-			<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+					</article>
 
-			<div class="entry">
-				<?php the_content(); ?>
+				</div>
 			</div>
-
-		</article>
-
-
-
-
-
+		</div>
 
 		<?php endwhile; ?>
 
@@ -42,5 +61,6 @@
 		<?php get_template_part('templates/404'); ?>
 
 	<?php endif; ?>
+
 
 <?php get_footer(); ?>

@@ -33,13 +33,37 @@
 </head>
 <body <?php body_class(); ?> >
 
-    <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+  <header class="nav-bar">
+      <div class="container">
+        <div class="row">
+          <div class="three columns">
+            <!-- <div class="logo">
+              <a href="<?php echo site_url(); ?>" id="logo-link"></a>
+            </div>-->
+            <div class="home">
+              <a href="<?php echo site_url(); ?>">Home</a>
+            </div> 
+          </div>
+          <nav class="nine columns">
+            <input class="trigger" type="checkbox" id="nav-button">
+            <label class="hamburger" for="nav-button" onclick>+</label>
+            <ul class="u-pull-right">
+              <?php
+                // get all the pages from 'main' category
+                $main_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name' => 'main', 'posts_per_page' => 200 ) );
+
+                foreach($main_pages as $main_page) // for each school within schools
+                {
+
+                  $main_URL = get_page_link($main_page->ID);
+                  $main_name = $main_page->post_title;
+                  // showMeTheGoods($school_name);
+                  echo '<li><a href="' . $main_URL . '">' . $main_name . '</a></li>';
+                }
+              ?>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </div>
+    </header>

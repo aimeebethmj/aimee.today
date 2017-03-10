@@ -1,7 +1,28 @@
+body
+{
+  // padding-top: 7.5rem;
+  padding: 5rem 2rem;
+}
+
 .container
 {
   padding: 0;
-  max-width: 120rem; // should be 1200px
+  // max-width: 120rem;
+  max-width: 100rem; 
+}
+
+header.container,
+#mainBlogFeed,
+footer.container
+{
+  // max-width: 860px; 
+  max-width: 800px; 
+  margin-top: 4rem;
+}
+
+.entry
+{
+  padding: 6rem 12rem;
 }
 
 .centered {
@@ -24,6 +45,7 @@
   transform: translateY(-50%);
   width: 100%;
 }
+
 .low-centered
 {
   position: absolute;
@@ -75,10 +97,10 @@
   margin-left: 25%;
   margin-right: 25%;
 
-  .fieldnotes
-  {
-    margin-bottom: 5rem;
-  }
+  // .fieldnotes
+  // {
+  //   margin-bottom: 5rem;
+  // }
 }
 
 // .contact-links
@@ -98,11 +120,46 @@
 //   }
 // }
 
-.footerEmail
-{
-  a
-  {
-    padding-left: 2rem;
-  }
+// .footerEmail
+// {
+//   a
+//   {
+//     padding-left: 2rem;
+//   }
 
+// }
+
+.h-centred, .v-centred
+{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+
+.v-centred 
+{
+    align-items: center;
+}
+
+.h-centred 
+{
+    justify-content: center;
+    text-align: center;
+}
+
+img
+{
+  max-width: 100%;  
+}
+
+.marginBtmLarge
+{
+  margin-bottom: 6rem;
+}
+
+// .marginTopSmall
+// {
+//   margin-top: 1rem;
+// }

@@ -18,18 +18,17 @@
 		<?php while (have_posts()) : the_post(); ?>
 
 	    <div class="container" id="welcomeSection">
-	      <div class="row" id="todayMessage">
-	        <!-- <div class="twelve columns h-centred v-centred"> -->
+	      <!-- <div class="row" id="todayMessage">
 	        <div class="twelve columns h-centred v-centred">
 	          <img alt="Today's inspiration: Do that thing!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayLogoHandwriting.svg">
 	        </div>
-	      </div>
+	      </div> -->
 	      <div class="row" id="welcomeImage">  
 	        <!-- <div class="twelve columns headerImage h-centred v-centred">    -->
 	        <div class="twelve columns">
 	          <img alt="Drawing of Aimee's studio and photo of Aimee smiling, super happy that you're here!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayheaderImage_heart.png">
 	          <!-- <section class="h-centred v-centred headerAboutBlurb"> -->
-	          <p>Pep-talks &amp; printables <br>to get beyond your limits</p>
+	          <p>Pep-talks to be brave and<br>take your <b>very next step</b></p>
 	          <!-- </section> -->
 	        </div> 
 	      </div>

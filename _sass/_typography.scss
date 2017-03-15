@@ -57,6 +57,7 @@ h1
 {
 	font-size: 6.6rem;
 	text-align: center;
+	margin-top: 8rem;
 }
 
 h2
@@ -109,19 +110,26 @@ p, li, ul
 {
 	list-style: none;
     counter-reset: my-badass-counter;
+    background-color: rgba(255, 225, 207, 0.2);
+    margin: 6rem -12rem;
+    padding: 8rem 12rem 6rem 14rem;
+
+
 	
 	li
 	{
 		position: relative;
+		margin-bottom: 5rem;
 		
 		&:before 
 		{
 		    content: counter(my-badass-counter);
 		    counter-increment: my-badass-counter;
 		    position: absolute;
-		    left: -6rem;
-		    top: -4rem;
-		    font-size: 400%;
+		    left: -8rem;
+    		top: -2.5rem;
+    		font-size: 300%;
+    		color: rgba(236, 77, 25, 0.7);
 		}
 	}
 }

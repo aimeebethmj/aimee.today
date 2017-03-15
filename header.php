@@ -67,3 +67,11 @@
         </div>
       </div>
     </header>
+
+    <div class="container">
+      <div class="row" id="todayMessage">
+          <div class="twelve columns h-centred v-centred">
+            <img alt="Today's inspiration: Do that thing!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayLogoHandwriting.svg">
+          </div>
+        </div>
+    </div>

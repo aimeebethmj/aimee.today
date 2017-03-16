@@ -25,7 +25,7 @@ Template Name: About Page
 
       <div class="container">
         <div class="row">
-          <img class="u-max-full-width" src="<?php echo $imageURL; ?>">
+          
         </div>
       </div>
 
@@ -40,7 +40,7 @@ Template Name: About Page
 					
 					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 						<h1><?php echo get_the_title(); ?></h1>
-
+						<img class="u-max-full-width profile-image" src="<?php echo $imageURL; ?>">
 						<div class="entry">
 							<?php the_content(); ?>
 						</div>

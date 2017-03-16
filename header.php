@@ -71,7 +71,7 @@
     <div class="container">
       <div class="row" id="todayMessage">
           <div class="twelve columns h-centred v-centred">
-            <img alt="Today's inspiration: Do that thing!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayLogoHandwriting.svg">
+            <a href="<?php echo site_url(); ?>"><img alt="Today's inspiration: Do that thing!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayLogoHandwriting.svg"></a>
           </div>
         </div>
     </div>

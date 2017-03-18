@@ -40,7 +40,7 @@
             <!-- <div class="logo">
               <a href="<?php echo site_url(); ?>" id="logo-link"></a>
             </div>-->
-            <div class="home">
+            <div id="home-link">
               <a href="<?php echo site_url(); ?>">Home</a>
             </div> 
           </div>

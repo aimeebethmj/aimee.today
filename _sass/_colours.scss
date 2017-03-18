@@ -14,7 +14,10 @@ $white: #FFFFFF;
 // {
 // 	color: rgb(247, 92, 28);
 // }
-
+body 
+{
+	color: rgba(0, 0, 0, 0.85);
+}
 a
 {
 	color: $black;

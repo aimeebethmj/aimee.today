@@ -16,6 +16,12 @@
     {
       margin-right: 10%;
       margin-left: 10%;
+
+      #home-link
+      {
+        transition: 0.5s;
+        opacity: 0;
+      }
     }
   }
 

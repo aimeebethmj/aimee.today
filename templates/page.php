@@ -24,11 +24,11 @@ Template Post Type: post
 
     ?>
 
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <img class="u-max-full-width" src="<?php echo $imageURL; ?>">
         </div>
-      </div>
+      </div> -->
 
     <!-- DETAIL -->
       
@@ -41,6 +41,8 @@ Template Post Type: post
 					
 					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 						<h1><?php echo get_the_title(); ?></h1>
+
+						<img class="u-max-full-width" src="<?php echo $imageURL; ?>">
 
 						<div class="entry">
 							<?php the_content(); ?>

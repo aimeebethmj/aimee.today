@@ -5,9 +5,25 @@
 		img.profile-image
 		{
 			max-width: 75%;
+		}
+
+		img.u-max-full-width,
+		img.profile-image
+		{
 			margin: 0 auto;
     		display: block;
+    		max-width: 80%;
+
 		}
 	}
+
 	
+}
+
+#headerImage img
+{
+	margin-top: 3rem;
+    margin: -5rem -2rem;
+    width: calc(100% + 4rem);
+    max-width: inherit;
 }

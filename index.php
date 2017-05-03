@@ -10,29 +10,29 @@
  * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
  */
 ?>
+	<?php get_header(); ?>
 
-<?php get_header(); ?>
+
+<!-- 		<div class="container" id="welcomeSection">
+	      <div class="row" id="welcomeImage">  
+	        <div class="twelve columns">
+	          <img alt="Drawing of Aimee's studio and photo of Aimee smiling, super happy that you're here!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayheaderImage_heart.png">
+	          <p>Pep-talks to be brave and<br>take your <b>very next step</b></p>
+	        </div> 
+	      </div>
+	    </div> -->
+
+
+	<?php 
+      $imageURL = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+
+    ?>
 
 	<?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
 
-	    <div class="container" id="welcomeSection">
-	      <!-- <div class="row" id="todayMessage">
-	        <div class="twelve columns h-centred v-centred">
-	          <img alt="Today's inspiration: Do that thing!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayLogoHandwriting.svg">
-	        </div>
-	      </div> -->
-	      <div class="row" id="welcomeImage">  
-	        <!-- <div class="twelve columns headerImage h-centred v-centred">    -->
-	        <div class="twelve columns">
-	          <img alt="Drawing of Aimee's studio and photo of Aimee smiling, super happy that you're here!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayheaderImage_heart.png">
-	          <!-- <section class="h-centred v-centred headerAboutBlurb"> -->
-	          <p>Pep-talks to be brave and<br>take your <b>very next step</b></p>
-	          <!-- </section> -->
-	        </div> 
-	      </div>
-	    </div>
+	    
 			
 		<div class="container" id="mainBlogFeed">
 			<div class="row">
@@ -42,6 +42,8 @@
 					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
 						<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+
+						<img class="u-max-full-width" src="<?php echo $imageURL; ?>">
 
 						<div class="entry">
 							<?php the_content(); ?>

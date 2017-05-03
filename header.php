@@ -61,17 +61,13 @@
                   echo '<li><a href="' . $main_URL . '">' . $main_name . '</a></li>';
                 }
               ?>
-              <li><a href="#">Shop</a></li>
+              <li><a href="https://www.etsy.com/uk/shop/AimeeToday">Shop</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
 
-    <div class="container">
-      <div class="row" id="todayMessage">
-          <div class="twelve columns h-centred v-centred">
-            <a href="<?php echo site_url(); ?>"><img alt="Today's inspiration: Do that thing!" src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayLogoHandwriting.svg"></a>
-          </div>
+        <div id="headerImage">
+            <img alt="Aimee Today. You can do it! Friendly reminders to help you be brave and take your next step! Plus printables and other tools to make every day amazing." src="<?php theActiveThemeDirectory(); ?>images/AimeeToday_Header_3.jpg">
         </div>
-    </div>

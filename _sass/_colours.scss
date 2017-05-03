@@ -32,7 +32,9 @@ a
 
 .nav-bar
 {
-	background-color: rgba($white, 0.8);
+	// background-color: rgba($white, 0.8);
+	background-color: rgba($white, 0);
+	transition: background-color 0.5s;
 
 	a,
 	.hamburger
@@ -157,4 +159,9 @@ ul.gallery
 	        }
 	    }
 	}
+}
+
+h3.comment-call-to-action
+{
+	color: #fa612c;
 }

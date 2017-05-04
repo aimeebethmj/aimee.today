@@ -27,4 +27,10 @@ function fileExists($path)
     return (@fopen($path, 'r') == true);
 }
 
+// from https://codex.wordpress.org/Customizing_the_Read_More
+function modify_read_more_link() {
+    return '<b><a class="more-link" href="' . get_permalink() . '">Read more +</a></b>';
+}
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+
 ?>

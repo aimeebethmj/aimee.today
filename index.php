@@ -48,7 +48,9 @@
 						<div class="entry">
 							<?php the_content(); ?>
 						</div>
-
+						<div class="blogEnd">
+							<img src="<?php theActiveThemeDirectory(); ?>images/LOOPY_HR.png">
+						</div>
 					</article>
 
 				</div>

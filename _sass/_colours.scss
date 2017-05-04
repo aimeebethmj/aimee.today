@@ -7,6 +7,7 @@ $blue2: #5FD1F9;
 $blue3: #95E0FB;
 $paleBlue: #F4FCFF;
 $white: #FFFFFF;
+$tomato: #fa612c;
 
 
 
@@ -163,5 +164,10 @@ ul.gallery
 
 h3.comment-call-to-action
 {
-	color: #fa612c;
+	color: $tomato;
+}
+
+input[type="submit"]
+{
+	background-color: $tomato;
 }

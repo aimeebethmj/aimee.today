@@ -67,7 +67,11 @@
         </div>
       </div>
     </header>
-
+    <div class="LogoHeader">
+        <div id="logo">
+          <a href="<?php echo site_url(); ?>"><img src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayLogo_2.0.png"></a>
+        </div>
         <div id="headerImage">
             <img alt="Aimee Today. You can do it! Friendly reminders to help you be brave and take your next step! Plus printables and other tools to make every day amazing." src="<?php theActiveThemeDirectory(); ?>images/AimeeToday_Header_3.jpg">
         </div>
+    </div>

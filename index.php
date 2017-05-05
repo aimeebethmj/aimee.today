@@ -43,7 +43,14 @@
 
 						<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 
-						<img class="u-max-full-width" src="<?php echo $imageURL; ?>">
+						 <img class="u-max-full-width" src="<?php echo $imageURL; ?>"> 
+						<!-- <div class="featuredImage">
+						<?php
+						if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+						the_post_thumbnail( 'large' );
+						}
+						?>
+						</div> -->
 
 						<div class="entry">
 							<?php the_content(); ?>

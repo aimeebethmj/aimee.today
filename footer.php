@@ -47,6 +47,7 @@
 					<!--End mc_embed_signup-->
 	    	</div>
 	    </div>
+	    <small class="h-centred v-centred">&copy; Copyright &nbsp; <span id="year">1989</span>, Aimee Johanan</small>
 	</footer>
 
 	<script src="<?php theActiveThemeDirectory(); ?>js/jquery-3.2.0.slim.min.js"></script>
@@ -75,5 +76,11 @@
 	        }
 		})
 	</script>
+	<script language="javascript" type="text/javascript">
+			var today = new Date()
+			var year = today.getFullYear()
+			var span = document.getElementById("year")
+			span.innerHTML = year
+		</script>
 </body>
 </html>

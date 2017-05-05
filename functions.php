@@ -33,4 +33,7 @@ function modify_read_more_link() {
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 200, 250, true );
+
 ?>

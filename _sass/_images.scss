@@ -1,4 +1,13 @@
-#mainBlogFeed  
+body 
+{
+	background-image: url(../images/AimeeToday_Header_3.4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 31vw;
+}
+
+
+.mainBlogFeed  
 {
 	article
 	{
@@ -10,21 +19,17 @@
 		img.u-max-full-width,
 		img.profile-image
 		{
-			margin: 0 auto;
+			margin: 0 auto 4rem;
     		display: block;
     		max-width: 80%;
-
 		}
-		
-	}
-
-	
+	}	
 }
 
-#headerImage img
+/* #headerImage img
 {
 	margin-top: 3rem;
     margin: -5rem -2rem;
     width: calc(100% + 4rem);
     max-width: inherit;
-}
+} */

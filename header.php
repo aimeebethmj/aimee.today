@@ -30,8 +30,24 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+ <!-- MYFONTS trial
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v2/js?sid=293494(font-family=Frontage+Condensed+Bold)&sid=293547(font-family=Frontage+Condensed+3D)&sid=293554(font-family=Frontage+Condensed+Regular)&key=lkZQ9Jrp7i',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
+
 </head>
 <body <?php body_class(); ?> >
+  <?php include_once("analyticstracking.php") ?>
 
   <header class="nav-bar">
       <div class="container">
@@ -40,9 +56,9 @@
             <!-- <div class="logo">
               <a href="<?php echo site_url(); ?>" id="logo-link"></a>
             </div>-->
-            <div id="home-link">
+            <!-- <div id="home-link">
               <a href="<?php echo site_url(); ?>">Home</a>
-            </div> 
+            </div> --> 
           </div>
           <nav class="nine columns">
             <input class="trigger" type="checkbox" id="nav-button">
@@ -61,7 +77,7 @@
                   echo '<li><a href="' . $main_URL . '">' . $main_name . '</a></li>';
                 }
               ?>
-              <li><a href="https://www.etsy.com/uk/shop/AimeeToday">Shop</a></li>
+              <li><a href="https://www.etsy.com/uk/shop/AimeeToday">Printable Shop</a></li>
             </ul>
           </nav>
         </div>
@@ -69,9 +85,9 @@
     </header>
     <div class="LogoHeader">
         <div id="logo">
-          <a href="<?php echo site_url(); ?>"><img src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayLogo_2.0.png"></a>
+          <a href="<?php echo site_url(); ?>"><img src="<?php theActiveThemeDirectory(); ?>images/AimeeTodayLogo_2.1blue.svg"></a>
         </div>
-        <div id="headerImage">
-            <img alt="Aimee Today. You can do it! Friendly reminders to help you be brave and take your next step! Plus printables and other tools to make every day amazing." src="<?php theActiveThemeDirectory(); ?>images/AimeeToday_Header_3.jpg">
-        </div>
+        <!-- <div id="headerImage">
+            <img alt="Aimee Today. You can do it! Friendly reminders to help you be brave and take your next step! Plus printables and other tools to make every day amazing." src="<?php theActiveThemeDirectory(); ?>images/AimeeToday_Header_4.jpg">
+        </div> -->
     </div>

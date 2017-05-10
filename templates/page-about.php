@@ -33,7 +33,7 @@ Template Name: About Page
       
 
 
-		<div class="container" id="mainBlogFeed">
+		<div class="container mainBlogFeed">
 			<div class="row">
 				<!-- <div class="twelve columns h-centred v-centred"> -->
 				<div class="twelve columns">

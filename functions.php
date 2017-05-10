@@ -36,4 +36,17 @@ add_filter( 'the_content_more_link', 'modify_read_more_link' );
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 200, 250, true );
 
+// from https://developer.wordpress.org/reference/functions/comments_template/
+// function comments_template( $file = '/comments.php', $separate_comments = false ) {
+//     global $wp_query, $withcomments, $post, $wpdb, $id, $comment, $user_login, $user_ID, $user_identity, $overridden_cpage;
+ 
+//     if ( !(is_single() || is_page() || $withcomments) || empty($post) )
+//         return;
+ 
+//     if ( empty($file) )
+//         $file = '/comments.php';
+ 
+//     $req = get_option('require_name_email');
+
+
 ?>

@@ -25,15 +25,36 @@ input:focus
 input[type="submit"]
 {
 	margin: 3rem auto;
-	color: #fffbf2;
-	border-radius: .25em;
-	border: none;
-	padding: .5rem;
+    color: #fffbf2;
+    border-radius: .4rem;
+    border: none;
+    padding: .75rem 1.5rem;
     font-size: 3rem;
-	font-weight: 200;
-	width: 40%;
-	display: block;
-	text-transform: inherit;
+    font-weight: 200;
+    display: block;
+    text-transform: inherit;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+input[type="submit"]:hover
+{
+	-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+	color: #fffbf2;
+	background-color: $bubblegum;
 }
 
 input:-webkit-autofill
@@ -63,7 +84,3 @@ div#mce-success-response.response
     color: #ef8522;
 }
 
-.mc-field-group
-{
-	padding: 0rem 20rem;
-}

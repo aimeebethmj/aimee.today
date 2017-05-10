@@ -23,10 +23,7 @@
 	    </div> -->
 
 
-	<?php 
-      $imageURL = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-
-    ?>
+	
 
 	<?php if (have_posts()) : ?>
 
@@ -34,7 +31,7 @@
 
 	    
 			
-		<div class="container" id="mainBlogFeed">
+		<div class="container mainBlogFeed">
 			<div class="row">
 				<!-- <div class="twelve columns h-centred v-centred"> -->
 				<div class="twelve columns">
@@ -42,6 +39,10 @@
 					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
 						<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+
+						<?php 
+					      $imageURL = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+					    ?>
 
 						 <img class="u-max-full-width" src="<?php echo $imageURL; ?>"> 
 						<!-- <div class="featuredImage">
@@ -56,7 +57,7 @@
 							<?php the_content(); ?>
 						</div>
 						<div class="blogEnd">
-							<img src="<?php theActiveThemeDirectory(); ?>images/LOOPY_HR.png">
+							<img src="<?php theActiveThemeDirectory(); ?>images/LOOPY_HR_blue.svg">
 						</div>
 					</article>
 

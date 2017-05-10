@@ -52,18 +52,28 @@ b, strong
 	font-weight: 700i;
 }
 
+h1, h2
+{
+	font-family: 'Frontage Condensed Bold'
+}
+
+h1.standout, 
+h2.standout
+{
+	// use for emphasis
+}
 
 h1
 {
 	font-size: 6.6rem;
 	text-align: center;
-	margin-top: 4rem;
+	margin: 8rem 0 4rem;
 }
 
 h2
 {
 	font-size: 4.8rem;
-	margin: 8rem 0 4rem;
+	margin: 4rem 0 4rem;
 }
 
 h3
@@ -133,6 +143,17 @@ p, li, ul
     		color: #fa612c;
 		}
 	}
+}
+
+label
+{
+	font-family: 'Frontage Condensed Regular';
+	font-size: 2rem;
+}
+
+.nav-bar nav ul li
+{
+	font-family: Frontage Condensed Regular;
 }
 
 

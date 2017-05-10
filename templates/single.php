@@ -34,7 +34,7 @@ Template Post Type: post
       
 
 
-		<div class="container" id="mainBlogFeed">
+		<div class="container mainBlogFeed">
 			<div class="row">
 				<!-- <div class="twelve columns h-centred v-centred"> -->
 				<div class="twelve columns">
@@ -83,6 +83,10 @@ Template Post Type: post
 							  wp_reset_query();
 							  ?>
 						</div>
+						<?php
+						// If comments are open or we have at least one comment, load up the comment template.
+						 comments_template( string $file = '/comments.php', bool $separate_comments = false )
+						 ?>
 
 					</article>
 

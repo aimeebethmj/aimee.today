@@ -1,16 +1,16 @@
 // VARIABLES
 
 $black: #000000;
-$teal: #005A80;
-$blue1: #00B4FF;
-$blue2: #5FD1F9;
-$blue3: #95E0FB;
-$paleBlue: #F4FCFF;
 $white: #FFFFFF;
 $tomato: #fa612c;
 $turmeric: #fbc112;
 $turquoise: #7fccd4;
 $papaya: #ff8d1d;
+$beetroot: #d8007e;
+$fuschia: #fd129b;
+$deepblue: #160065;
+$charcoal: #3e3e3e;
+$bubblegum: #ff71cb;
 
 
 
@@ -20,18 +20,26 @@ $papaya: #ff8d1d;
 // }
 body 
 {
-	color: rgba(0, 0, 0, 0.85);
+	// color: rgba(0, 0, 0, 0.85);
+	color: $charcoal;
 }
+
 a
 {
-	color: $black;
+	color: $beetroot;
 	text-decoration: underline;
 	&:hover, &:active
 	{
-	  color:  rgb(251, 205, 23);
+	  color:  $bubblegum;
 	}
 
 	transition: color 0.4s ease;
+}
+
+h1,
+h1 a
+{
+	color: $beetroot;
 }
 
 .nav-bar
@@ -39,11 +47,16 @@ a
 	// background-color: rgba($white, 0.8);
 	background-color: rgba($white, 0);
 	transition: background-color 0.5s;
+	
+	nav ul li
+	{
+		color: $deepblue;
+	}
 
 	a,
 	.hamburger
 	{
-		color: $black;
+		color: $deepblue;
 
 		&:hover, &:active
 		{
@@ -52,118 +65,10 @@ a
 	}
 }
 
-ul.gallery
-{
-	a
-	{
-		background-color: rgba($blue1, .7);
-		color: white;
-	}
-}
 
-.fieldnotes ul li a
-{
-	color: inherit;
 
-	&:hover, &:active
-  {
-    color: $blue1;
 
-    &:hover, &:active
-    {
-      color: $blue2;
-    }
-  }
-}
 
-.blog
-{
-	// background: $paleBlue;
-}
-
-.multiple-slider
-{
-    .column
-    {
-    	background: transparent;
-    	&:hover
-	    {
-	        background: $blue3;
-	    }
-	    &:focus
-	    {
-	    	outline: none;
-	    }
-	}
-}
-
-#me
-{
-
-	a,
-	.footerEmail
-	{
-		color: $blue1;
-		text-decoration: none;
-
-		&:hover, &:active
-	    {
-	      color: $blue2;
-	    }
-	}
-
-	a span.wantMore
-	{
-		color: $black;
-	}
-
-}
-
-#footer-bar
-{
-	background-color: $blue1;
-}
-
-.slider
-{
-	h1
-	{
-		color: $white;
-	}
-
-	.slick-slide:focus
-	{
-		outline: none;
-	}
-
-	.slick-dots
-	{
-	    li
-	    {
-	        button
-	        {
-	            &:hover, &:focus
-	            {
-	                &:before
-	                {
-	                    opacity: 1;
-	                }
-	            }
-	            &:before
-	            {
-	                color: $white;
-	                opacity: 1;
-	                -webkit-font-smoothing: antialiased;
-	                -moz-osx-font-smoothing: grayscale;
-	            }
-	        }
-	        &.slick-active button:before {
-	            color: $blue1;
-	            opacity: 1;
-	        }
-	    }
-	}
-}
 
 h3.comment-call-to-action
 {
@@ -172,5 +77,7 @@ h3.comment-call-to-action
 
 input[type="submit"]
 {
-	background-color: $tomato;
+	background-color: $fuschia;
 }
+
+

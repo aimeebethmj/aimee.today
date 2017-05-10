@@ -57,7 +57,7 @@
 							<?php the_content(); ?>
 						</div>
 						<div class="blogEnd">
-							<img src="<?php theActiveThemeDirectory(); ?>images/LOOPY_HR_blue.svg">
+							<img src="<?php theActiveThemeDirectory(); ?>images/LOOPY_HR_ginger.svg">
 						</div>
 					</article>
 

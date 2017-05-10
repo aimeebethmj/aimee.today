@@ -32,18 +32,6 @@
 
  <!-- MYFONTS trial
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript">
-    (function() {
-        var path = '//easy.myfonts.net/v2/js?sid=293494(font-family=Frontage+Condensed+Bold)&sid=293547(font-family=Frontage+Condensed+3D)&sid=293554(font-family=Frontage+Condensed+Regular)&key=lkZQ9Jrp7i',
-            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-            trial = document.createElement('script');
-        trial.type = 'text/javascript';
-        trial.async = true;
-        trial.src = protocol + path;
-        var head = document.getElementsByTagName("head")[0];
-        head.appendChild(trial);
-    })();
-</script>
 
 </head>
 <body <?php body_class(); ?> >

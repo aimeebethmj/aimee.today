@@ -48,6 +48,8 @@ Template Post Type: post
 							<?php the_content(); ?>
 						</div>
 
+
+
 						<div class="relatedposts">
 							<h3>You might also like...</h3>
 							<?php
@@ -83,9 +85,13 @@ Template Post Type: post
 							  wp_reset_query();
 							  ?>
 						</div>
+
+						
 						<?php
-						// If comments are open or we have at least one comment, load up the comment template.
-						 comments_template( string $file = '/comments.php', bool $separate_comments = false )
+							// If comments are open or we have at least one comment, load up the comment template.
+							if ( comments_open() || get_comments_number() ) :
+								comments_template();
+							endif;
 						 ?>
 
 					</article>

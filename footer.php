@@ -50,6 +50,8 @@
 	    <small class="h-centred v-centred">&copy; Copyright &nbsp; <span id="year">1989</span>, Aimee Johanan</small>
 	</footer>
 
+	<?php wp_footer(); ?>
+
 	<script src="<?php theActiveThemeDirectory(); ?>js/jquery-3.2.0.slim.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() 
@@ -75,12 +77,13 @@
 	          	console.log("jQuery nope")
 	        }
 		})
-	</script>
-	<script language="javascript" type="text/javascript">
+
 			var today = new Date()
 			var year = today.getFullYear()
 			var span = document.getElementById("year")
 			span.innerHTML = year
-		</script>
+
+	</script>
+	<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>

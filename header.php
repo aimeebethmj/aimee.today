@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 
+
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -16,22 +17,71 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="<?php theActiveThemeDirectory(); ?>css/normalize.css">
   <link rel="stylesheet" href="<?php theActiveThemeDirectory(); ?>css/skeleton.css">
+  <link rel="stylesheet" href="<?php theActiveThemeDirectory(); ?>css/MyFontsWebfontsKit.css">
   <link rel="stylesheet" href="<?php theActiveThemeDirectory(); ?>css/main.css">
+
+  <meta name="p:domain_verify" content="5042b53bad534bc7b45473cfeb487e0c"/>
+ 
+ <!-- MYFONTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3386915, 2017-05-10T09:51:13-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * 
+ * Webfont: FrontageCondensed-Line by Juri Zaech
+ * URL: https://www.myfonts.com/fonts/jurizaech/frontage-condensed/line/
+ * 
+ * Webfont: FrontageCondensed-Bold by Juri Zaech
+ * URL: https://www.myfonts.com/fonts/jurizaech/frontage-condensed/bold/
+ * 
+ * Webfont: FrontageCondensed-Inline by Juri Zaech
+ * URL: https://www.myfonts.com/fonts/jurizaech/frontage-condensed/inline/
+ * 
+ * Webfont: FrontageCondensed-3D by Juri Zaech
+ * URL: https://www.myfonts.com/fonts/jurizaech/frontage-condensed/3d/
+ * 
+ * Webfont: FrontageCondensed-Outline by Juri Zaech
+ * URL: https://www.myfonts.com/fonts/jurizaech/frontage-condensed/outline/
+ * 
+ * Webfont: FrontageCondensed-Regular by Juri Zaech
+ * URL: https://www.myfonts.com/fonts/jurizaech/frontage-condensed/regular/
+ * 
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3386915
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright &#x00A9; 2016 by Juri Zaech. All rights reserved.
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+-->
+  
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
 
- <!-- MYFONTS trial
+
+  <!-- Open graph metas for article rich pins
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta property="og:type" content="blog" />
+    <meta property="og:title" content="<?php the_title(); ?>" />
+    <meta property="og:url" content="<?php the_permalink() ?>" />
+    <meta property="og:site_name" content="Aimee Today" />
+    <meta property="article:author" content="Aimee Johanan" />
 
 <?php wp_head(); ?>
 </head>

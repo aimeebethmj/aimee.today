@@ -51,8 +51,18 @@ a
 h1,
 h1 a
 {
-	color: $lavender;
+	color: $seafoamIsland;
 }
+
+h1 a
+{
+	color: $seafoamIsland;
+	&:hover, &:active
+	{
+	  color:  $lightSage;
+	}
+}
+
 
 h2
 {
@@ -87,11 +97,6 @@ h2
 		}
 	}
 }
-
-
-
-
-
 
 h3.comment-call-to-action
 {

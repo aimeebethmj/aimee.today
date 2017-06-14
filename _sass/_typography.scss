@@ -52,9 +52,9 @@ b, strong
 	font-weight: 700i;
 }
 
-h1, h2
+h1, h2, h3
 {
-	font-family: 'Frontage Condensed Bold'
+	font-family: 'FrontageCondensed-Bold'
 }
 
 h1.standout, 
@@ -73,7 +73,7 @@ h1
 h2
 {
 	font-size: 4.8rem;
-	margin: 4rem 0 4rem;
+	margin: 8rem 0 4rem;
 }
 
 h3
@@ -138,22 +138,23 @@ p, li, ul
 		    counter-increment: my-badass-counter;
 		    position: absolute;
 		    left: -8rem;
-    		top: -2.5rem;
+    		top: -4.5rem;
     		font-size: 300%;
     		color: $pomodoro;
+    		font-family: 'FrontageCondensed-Bold'
 		}
 	}
 }
 
 label
 {
-	font-family: 'Frontage Condensed Regular';
+	font-family: 'FrontageCondensed-Regular';
 	font-size: 2rem;
 }
 
 .nav-bar nav ul li
 {
-	font-family: Frontage Condensed Regular;
+	font-family: 'FrontageCondensed-Regular';
 }
 
 

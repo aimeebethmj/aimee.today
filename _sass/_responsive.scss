@@ -130,7 +130,7 @@
 	.mainBlogFeed article img.u-max-full-width, 
 	.mainBlogFeed article img.profile-image 
 	{
-    max-width: 77.3%;
+    max-width: 100%;
 	}
 
 
@@ -141,6 +141,19 @@
 	    position: absolute;
 	}
 
+
+
+	p, li, ul 
+	{
+	    font-size: 2.4rem;
+	}
+
+	.footer-content
+	{
+	  padding-right: 2rem;
+	  padding-left: 2rem;
+	}
+
 }
 
 // @media (max-width: 549px)
@@ -148,7 +161,7 @@
 {
 	body 
 	{
-		background-image: url(../images/AimeeToday_Header_3.2mobile.jpg);
+		background-image: url(../images/AimeeToday_Header_3.55_4MOBILE.jpg);
 		padding-top: 63vw;
 	}
 
